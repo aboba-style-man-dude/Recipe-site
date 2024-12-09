@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вкусняшка - Рецепты</title>
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/search.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="logo">Вкусняшка</a>
+            <div class="search">
+                <input type="search" placeholder="Найти рецепт..." aria-label="Поиск рецептов">
+            </div>
+            <button class="theme-toggle" aria-label="Переключить тему">
+                <svg class="theme-toggle__icon" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+    
+    <nav class="categories">
+        <div class="container">
+            <ul class="categories__list">
+                <li><a href="#" class="categories__item categories__item--active">Все рецепты</a></li>
+                <li><a href="#" class="categories__item">Супы</a></li>
+                <li><a href="#" class="categories__item">Салаты</a></li>
+                <li><a href="#" class="categories__item">Горячие блюда</a></li>
+                <li><a href="#" class="categories__item">Десерты</a></li>
+                <li><a href="#" class="categories__item">Напитки</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="main">
+        <div class="container">
+            <!-- Здесь будут карточки рецептов -->
+        </div>
+    </main>
+
+    <script src="js/theme.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/search.js"></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{RECIPE_TITLE}} - Вкусняшка</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/recipe.css">
+    <link rel="stylesheet" href="../css/search.css">
+</head>
+<body>
+    <script src="../js/search.js"></script>
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="logo">Вкусняшка</a>
+            <div class="search">
+                <input type="search" placeholder="Найти рецепт..." aria-label="Поиск рецептов">
+            </div>
+            <button class="theme-toggle" aria-label="Переключить тему">
+                <svg class="theme-toggle__icon" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="recipe-page">
+        <div class="container">
+            <div class="recipe-hero">
+                <img src="{{RECIPE_IMAGE}}" alt="{{RECIPE_TITLE}}" class="recipe-hero__image">
+                <div class="recipe-hero__content">
+                    <h1 class="recipe-hero__title">{{RECIPE_TITLE}}</h1>
+                    <p class="recipe-hero__description">{{RECIPE_DESCRIPTION}}</p>
+                    <div class="recipe-meta">
+                        <div class="recipe-meta__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            <span>{{RECIPE_TIME}}</span>
+                        </div>
+                        <div class="recipe-meta__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 20v-6M6 20V10M18 20V4"/>
+                            </svg>
+                            <span>{{RECIPE_DIFFICULTY}}</span>
+                        </div>
+                        <div class="recipe-meta__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M19 5H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM8 14s1.5 2 4 2 4-2 4-2"/>
+                                <path d="M8 10s1.5-2 4-2 4 2 4 2"/>
+                            </svg>
+                            <span>{{RECIPE_SERVINGS}} порций</span>
+                        </div>
+                        <div class="recipe-meta__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                            <span>{{RECIPE_CALORIES}} ккал</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-content">
+                <div class="ingredients-section">
+                    <h2>Ингредиенты</h2>
+                    <div class="servings-control">
+                        <span>Количество порций:</span>
+                        <div class="servings-control__buttons">
+                            <button class="servings-control__btn" data-action="decrease">-</button>
+                            <span class="servings-control__value">{{RECIPE_SERVINGS}}</span>
+                            <button class="servings-control__btn" data-action="increase">+</button>
+                        </div>
+                    </div>
+                    <ul class="ingredients-list" id="ingredientsList">
+                        {{RECIPE_INGREDIENTS}}
+                    </ul>
+                </div>
+
+                <div class="steps-section">
+                    <h2>Приготовление</h2>
+                    <div class="recipe-steps" id="recipeSteps">
+                        {{RECIPE_STEPS}}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/recipe.js"></script>
+</body>
+</html> 

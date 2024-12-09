@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бефстроганов - Вкусняшка</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/recipe.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="logo">Вкусняшка</a>
+            <div class="search">
+                <input type="search" placeholder="Найти рецепт..." aria-label="Поиск рецептов">
+            </div>
+            <button class="theme-toggle" aria-label="Переключить тему">
+                <svg class="theme-toggle__icon" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="recipe-page">
+        <div class="container">
+            <div class="recipe-hero">
+                <img src="https://i.postimg.cc/T1HxfJty/beef-stroganoff-feature.jpg" alt="Бефстроганов" class="recipe-hero__image">
+                <div class="recipe-hero__content">
+                    <h1 class="recipe-hero__title">Бефстроганов</h1>
+                    <p class="recipe-hero__description">Классическое блюдо русской кухни из нежной говядины в сливочно-грибном соусе. Идеально сочетается с картофельным пюре или отварным рисом.</p>
+                    <div class="recipe-meta">
+                        <div class="recipe-meta__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            <span>45 минут</span>
+                        </div>
+                        <div class="recipe-meta__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 20v-6M6 20V10M18 20V4"/>
+                            </svg>
+                            <span>Средне</span>
+                        </div>
+                        <div class="recipe-meta__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M19 5H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM8 14s1.5 2 4 2 4-2 4-2"/>
+                                <path d="M8 10s1.5-2 4-2 4 2 4 2"/>
+                            </svg>
+                            <span>4 порций</span>
+                        </div>
+                        <div class="recipe-meta__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                            <span>450 ккал</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-content">
+                <div class="ingredients-section">
+                    <h2>Ингредиенты</h2>
+                    <div class="servings-control">
+                        <span>Количество порций:</span>
+                        <div class="servings-control__buttons">
+                            <button class="servings-control__btn" data-action="decrease">-</button>
+                            <span class="servings-control__value">4</span>
+                            <button class="servings-control__btn" data-action="increase">+</button>
+                        </div>
+                    </div>
+                    <ul class="ingredients-list" id="ingredientsList">
+                        
+        <li>
+            <span class="ingredient-name">Говядина (вырезка)</span>
+            <span class="ingredient-amount" data-original="600" data-unit="г">
+                600 г
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Грибы шампиньоны</span>
+            <span class="ingredient-amount" data-original="300" data-unit="г">
+                300 г
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Лук репчатый</span>
+            <span class="ingredient-amount" data-original="150" data-unit="г">
+                150 г
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Сметана</span>
+            <span class="ingredient-amount" data-original="200" data-unit="мл">
+                200 мл
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Мука пшеничная</span>
+            <span class="ingredient-amount" data-original="2" data-unit="ст.л.">
+                2 ст.л.
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Масло сливочное</span>
+            <span class="ingredient-amount" data-original="50" data-unit="г">
+                50 г
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Соль</span>
+            <span class="ingredient-amount" data-original="0" data-unit="по вкусу">
+                0 по вкусу
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Перец черный</span>
+            <span class="ingredient-amount" data-original="0" data-unit="по вкусу">
+                0 по вкусу
+            </span>
+        </li>
+    
+                    </ul>
+                </div>
+
+                <div class="steps-section">
+                    <h2>Приготовление</h2>
+                    <div class="recipe-steps" id="recipeSteps">
+                        
+        <div class="recipe-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <p>Нарежьте говядину тонкими полосками поперек волокон.</p>
+                <div class="step-tip">💡 Совет: Мясо легче нарезать, если оно слегка подмороженное</div>
+            </div>
+        </div>
+    
+
+        <div class="recipe-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <p>Нарежьте грибы пластинками, лук полукольцами.</p>
+                
+            </div>
+        </div>
+    
+
+        <div class="recipe-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <p>Обжарьте мясо на сильном огне до золотистой корочки, посолите и поперчите. Выложите на отдельную тарелку.</p>
+                <div class="step-tip">💡 Совет: Не переворачивайте мясо слишком часто, чтобы образовалась корочка</div>
+            </div>
+        </div>
+    
+
+        <div class="recipe-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <p>В той же сковороде обжарьте лук до золотистого цвета, добавьте грибы и жарьте еще 5-7 минут.</p>
+                
+            </div>
+        </div>
+    
+
+        <div class="recipe-step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+                <p>Добавьте муку, обжарьте 1-2 минуты, влейте сметану, перемешайте и тушите 3-4 минуты до загустения соуса.</p>
+                <div class="step-tip">💡 Совет: Если соус слишком густой, разбавьте его небольшим количеством горячей воды</div>
+            </div>
+        </div>
+    
+
+        <div class="recipe-step">
+            <div class="step-number">6</div>
+            <div class="step-content">
+                <p>Верните мясо в сковороду, перемешайте и прогрейте 2-3 минуты. Подавайте горячим.</p>
+                <div class="step-tip">💡 Совет: Идеально подавать с картофельным пюре или отварным рисом</div>
+            </div>
+        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/recipe.js"></script>
+</body>
+</html> 

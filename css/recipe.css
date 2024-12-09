@@ -1,0 +1,214 @@
+/* recipe.css */
+.recipe-page {
+    padding: 2rem 0;
+}
+
+/* Hero section */
+.recipe-hero {
+    margin-bottom: 3rem;
+    background-color: var(--color-bg);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px var(--color-shadow);
+}
+
+.recipe-hero__image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.recipe-hero__content {
+    padding: 2rem;
+}
+
+.recipe-hero__title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: var(--color-text);
+}
+
+.recipe-hero__description {
+    font-size: 1.1rem;
+    color: var(--color-secondary);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Meta information */
+.recipe-meta {
+    display: flex;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.recipe-meta__item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: var(--color-secondary);
+}
+
+.recipe-meta__item svg {
+    width: 24px;
+    height: 24px;
+    stroke: var(--color-primary);
+}
+
+/* Recipe content layout */
+.recipe-content {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+/* Ingredients section */
+.ingredients-section {
+    background-color: var(--color-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+.ingredients-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
+.servings-control {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.servings-control__buttons {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.servings-control__btn {
+    width: 32px;
+    height: 32px;
+    border: 1px solid var(--color-border);
+    background: var(--color-bg);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-text);
+    font-size: 1.2rem;
+    transition: all 0.3s;
+}
+
+.servings-control__btn:hover {
+    background: var(--color-primary);
+    border-color: var(--color-primary);
+}
+
+.servings-control__value {
+    font-size: 1.2rem;
+    color: var(--color-text);
+    min-width: 2ch;
+    text-align: center;
+}
+
+.ingredients-list {
+    list-style: none;
+}
+
+.ingredients-list li {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--color-border);
+    color: var(--color-text);
+}
+
+.ingredients-list li:last-child {
+    border-bottom: none;
+}
+
+/* Steps section */
+.steps-section {
+    background-color: var(--color-bg);
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px var(--color-shadow);
+}
+
+.steps-section h2 {
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
+.recipe-step {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid var(--color-border);
+}
+
+.recipe-step:last-child {
+    border-bottom: none;
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+    background-color: var(--color-primary);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+.step-content h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: var(--color-text);
+}
+
+.step-content p {
+    color: var(--color-secondary);
+    line-height: 1.6;
+}
+
+.step-tip {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--color-input-bg);
+    border-radius: 8px;
+    font-style: italic;
+    color: var(--color-secondary);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .recipe-content {
+        grid-template-columns: 1fr;
+    }
+
+    .recipe-hero__title {
+        font-size: 2rem;
+    }
+
+    .recipe-meta {
+        gap: 1rem;
+    }
+
+    .recipe-step {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

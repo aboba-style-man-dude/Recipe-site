@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Борщ классический - Вкусняшка</title>
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/recipe.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container header__container">
+            <a href="/" class="logo">Вкусняшка</a>
+            <div class="search">
+                <input type="search" placeholder="Найти рецепт..." aria-label="Поиск рецептов">
+            </div>
+            <button class="theme-toggle" aria-label="Переключить тему">
+                <svg class="theme-toggle__icon" width="24" height="24" viewBox="0 0 24 24">
+                    <path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="recipe-page">
+        <div class="container">
+            <div class="recipe-hero">
+                <img src="https://i.postimg.cc/zGhNYWKB/crop-sup.jpg" alt="Борщ классический" class="recipe-hero__image">
+                <div class="recipe-hero__content">
+                    <h1 class="recipe-hero__title">Борщ классический</h1>
+                    <p class="recipe-hero__description">Традиционный украинский борщ со свежей капустой и свеклой. Насыщенный вкус и аромат, который покорит каждого!</p>
+                    <div class="recipe-meta">
+                        <div class="recipe-meta__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <circle cx="12" cy="12" r="10"/>
+                                <path d="M12 6v6l4 2"/>
+                            </svg>
+                            <span>2 часа</span>
+                        </div>
+                        <div class="recipe-meta__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M12 20v-6M6 20V10M18 20V4"/>
+                            </svg>
+                            <span>Средне</span>
+                        </div>
+                        <div class="recipe-meta__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M19 5H5a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2zM8 14s1.5 2 4 2 4-2 4-2"/>
+                                <path d="M8 10s1.5-2 4-2 4 2 4 2"/>
+                            </svg>
+                            <span>6 порций</span>
+                        </div>
+                        <div class="recipe-meta__item">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                                <path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/>
+                            </svg>
+                            <span>325 ккал</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="recipe-content">
+                <div class="ingredients-section">
+                    <h2>Ингредиенты</h2>
+                    <div class="servings-control">
+                        <span>Количество порций:</span>
+                        <div class="servings-control__buttons">
+                            <button class="servings-control__btn" data-action="decrease">-</button>
+                            <span class="servings-control__value">6</span>
+                            <button class="servings-control__btn" data-action="increase">+</button>
+                        </div>
+                    </div>
+                    <ul class="ingredients-list" id="ingredientsList">
+                        
+        <li>
+            <span class="ingredient-name">Говядина на кости</span>
+            <span class="ingredient-amount" data-original="500" data-unit="г">
+                500 г
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Свекла</span>
+            <span class="ingredient-amount" data-original="300" data-unit="г">
+                300 г
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Капуста</span>
+            <span class="ingredient-amount" data-original="400" data-unit="г">
+                400 г
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Картофель</span>
+            <span class="ingredient-amount" data-original="400" data-unit="г">
+                400 г
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Морковь</span>
+            <span class="ingredient-amount" data-original="200" data-unit="г">
+                200 г
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Лук репчатый</span>
+            <span class="ingredient-amount" data-original="200" data-unit="г">
+                200 г
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Томатная паста</span>
+            <span class="ingredient-amount" data-original="2" data-unit="ст.л.">
+                2 ст.л.
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Масло растительное</span>
+            <span class="ingredient-amount" data-original="30" data-unit="мл">
+                30 мл
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Соль</span>
+            <span class="ingredient-amount" data-original="0" data-unit="по вкусу">
+                0 по вкусу
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Перец</span>
+            <span class="ingredient-amount" data-original="0" data-unit="по вкусу">
+                0 по вкусу
+            </span>
+        </li>
+    
+
+        <li>
+            <span class="ingredient-name">Лавровый лист</span>
+            <span class="ingredient-amount" data-original="2" data-unit="шт">
+                2 шт
+            </span>
+        </li>
+    
+                    </ul>
+                </div>
+
+                <div class="steps-section">
+                    <h2>Приготовление</h2>
+                    <div class="recipe-steps" id="recipeSteps">
+                        
+        <div class="recipe-step">
+            <div class="step-number">1</div>
+            <div class="step-content">
+                <p>Поставьте варить мясо в большой кастрюле с холодной водой. После закипания снимите пену и варите на медленном огне 1-1.5 часа до готовности мяса.</p>
+                <div class="step-tip">💡 Совет: Для прозрачного бульона варите мясо на медленном огне</div>
+            </div>
+        </div>
+    
+
+        <div class="recipe-step">
+            <div class="step-number">2</div>
+            <div class="step-content">
+                <p>Свеклу натрите на крупной терке, морковь и лук нарежьте соломкой. Обжарьте овощи на растительном масле 5-7 минут.</p>
+                <div class="step-tip">💡 Совет: Добавьте немного уксуса при жарке свеклы, чтобы сохранить яркий цвет</div>
+            </div>
+        </div>
+    
+
+        <div class="recipe-step">
+            <div class="step-number">3</div>
+            <div class="step-content">
+                <p>Нарежьте картофель кубиками, капусту нашинкуйте. Добавьте в кипящий бульон сначала картофель, через 10 минут капусту.</p>
+                
+            </div>
+        </div>
+    
+
+        <div class="recipe-step">
+            <div class="step-number">4</div>
+            <div class="step-content">
+                <p>Добавьте обжаренные овощи и томатную пасту в борщ. Варите еще 5-7 минут.</p>
+                <div class="step-tip">💡 Совет: Томатную пасту можно предварительно обжарить для более насыщенного вкуса</div>
+            </div>
+        </div>
+    
+
+        <div class="recipe-step">
+            <div class="step-number">5</div>
+            <div class="step-content">
+                <p>В конце добавьте лавровый лист, соль и перец по вкусу. Дайте настояться 15-20 минут.</p>
+                <div class="step-tip">💡 Совет: Подавайте со сметаной и свежей зеленью</div>
+            </div>
+        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="../js/theme.js"></script>
+    <script src="../js/recipe.js"></script>
+</body>
+</html> 

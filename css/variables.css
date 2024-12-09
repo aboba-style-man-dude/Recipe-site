@@ -1,0 +1,22 @@
+/* variables.css */
+:root {
+    /* Light theme */
+    --color-bg: #ffffff;
+    --color-text: #333333;
+    --color-primary: #FFD700;
+    --color-secondary: #666666;
+    --color-border: #e0e0e0;
+    --color-input-bg: #f5f5f5;
+    --color-shadow: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"] {
+    /* Dark theme */
+    --color-bg: #1a1a1a;
+    --color-text: #ffffff;
+    --color-primary: #FFD700;
+    --color-secondary: #a0a0a0;
+    --color-border: #333333;
+    --color-input-bg: #2d2d2d;
+    --color-shadow: rgba(0, 0, 0, 0.3);
+}
